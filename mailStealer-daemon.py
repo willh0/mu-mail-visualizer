@@ -4,7 +4,6 @@ from datetime import datetime
 import imaplib
 import urllib
 import re
-from dateutil import parser
 from pymongo import Connection
 
 config = yaml.load(file('/Users/williamhoward/mu-mail-visualizer/config.yaml', 'r'))
