@@ -6,7 +6,7 @@ import urllib
 import re
 from pymongo import Connection
 
-config = yaml.load(file('/Users/williamhoward/mu-mail-visualizer/config.yaml', 'r'))
+config = yaml.load(file('/Users/whoward/mu-mail-visualizer/mu-mail-visualizer/config.yaml', 'r'))
 con = imaplib.IMAP4_SSL(config['imap_add'], config['imap_port'])
 con.login(config['imap_email'], config['imap_pwd'])
 con.select(config['imap_folder'])
